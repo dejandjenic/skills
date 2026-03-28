@@ -164,6 +164,7 @@ It also writes a manifest file at `.github/dejan-skills.json` so `update` can re
 - Prompts in this repo reference the matching skills, so the default behavior syncs both.
 - `bootstrap` is prompt-first and includes prompts by default. Use `--with-skills` to include skills during bootstrap.
 - Skills are hidden from the slash menu in this repository and are meant to support the prompt aliases.
+- During sync, Claude skill copies are rewritten with `user-invocable: true` while GitHub/OpenCode copies preserve repository values.
 - The tool copies new upstream prompts and skills automatically on `update` when no filters are pinned in the manifest.
 - `update` removes stale previously managed files by default, based on `.github/dejan-skills.json`.
 - For private source repositories, the tool reads `GITHUB_TOKEN` and sends it as a bearer token to GitHub's archive API.

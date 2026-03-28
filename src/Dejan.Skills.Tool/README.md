@@ -19,5 +19,6 @@ Notes:
 - `update` prunes stale previously managed files by default. Add `--no-prune` to disable.
 - Sync targets include `github`, `claude`, and `opencode` by default.
 - Use `--platforms github,claude,opencode` to customize platform outputs.
+- Claude skill copies are written with `user-invocable: true` during sync.
 
 Run `dejan-skills --help` for usage details.

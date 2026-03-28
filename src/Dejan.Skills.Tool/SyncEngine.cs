@@ -366,8 +366,29 @@ internal sealed class SyncPlan
         foreach (var file in Files)
         {
             Directory.CreateDirectory(Path.GetDirectoryName(file.DestinationPath)!);
+            if (IsClaudeSkillDefinition(file.DestinationPath))
+            {
+                var content = File.ReadAllText(file.SourcePath);
+                content = content.Replace("user-invocable: false", "user-invocable: true", StringComparison.Ordinal);
+
+                if (!force && File.Exists(file.DestinationPath))
+                {
+                    throw new CommandLineException($"Existing files would be overwritten. Re-run with '--force' to replace them.{Environment.NewLine}- {file.DestinationPath}");
+                }
+
+                File.WriteAllText(file.DestinationPath, content);
+                continue;
+            }
+
             File.Copy(file.SourcePath, file.DestinationPath, overwrite: force);
         }
+    }
+
+    private static bool IsClaudeSkillDefinition(string destinationPath)
+    {
+        var normalizedPath = destinationPath.Replace('\\', '/');
+        return normalizedPath.EndsWith("/SKILL.md", StringComparison.Ordinal)
+            && normalizedPath.Contains("/.claude/skills/", StringComparison.Ordinal);
     }
 
     public string[] GetManagedFiles(string targetRoot)
