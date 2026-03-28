@@ -171,7 +171,7 @@ It also writes a manifest file at `.github/dejan-skills.json` so `update` can re
 
 ## CI Publishing
 
-This repo includes [dotnet-tool-publish.yml](.github/workflows/dotnet-tool-publish.yml), which runs on version tags (`v*`) and can:
+This repo includes [dotnet-tool-publish.yml](.github/workflows/dotnet-tool-publish.yml), which runs on semver tags (`v1.2.3` or `1.2.3`) and can:
 
 - pack the .NET tool package
 - upload built `.nupkg` files as workflow artifacts
@@ -181,7 +181,7 @@ This repo includes [dotnet-tool-publish.yml](.github/workflows/dotnet-tool-publi
 Versioning behavior:
 
 - Package version is derived from the git tag.
-- Example: tag `v0.1.1` produces package version `0.1.1`.
+- Example: tag `v0.1.1` or `0.1.1` produces package version `0.1.1`.
 - You do not need to update version in [Dejan.Skills.Tool.csproj](src/Dejan.Skills.Tool/Dejan.Skills.Tool.csproj).
 
 ## Release Checklist
