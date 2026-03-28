@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>dejan-skills</ToolCommandName>
+    <PackageId>dejan-skills</PackageId>
+    <VersionPrefix>0.0.0</VersionPrefix>
+    <Authors>Dejan Djenic</Authors>
+    <Description>Sync Copilot skills and prompt aliases from a GitHub repository into another repository.</Description>
+    <PackageTags>copilot;skills;prompts;dotnet-tool</PackageTags>
+    <RepositoryUrl>https://github.com/dejandjenic/skills</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>
