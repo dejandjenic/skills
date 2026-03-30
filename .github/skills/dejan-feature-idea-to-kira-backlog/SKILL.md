@@ -30,7 +30,7 @@ End-to-end workflow that converts an incomplete feature concept into implementat
 
 ## Phase Workflow
 1. Original Ticket Start Transition
-- If an original ticket ID is provided, validate slug and ticket existence first.
+- If an original ticket ID is provided, read the full ticket content using `get_ticket(projectSlug, ticketId)` via Kira MCP to gather context and validate existence.
 - Immediately update the original ticket status to `InProgress` at workflow start.
 - If this transition fails, stop and report the failure before continuing.
 
@@ -70,7 +70,7 @@ End-to-end workflow that converts an incomplete feature concept into implementat
   - update with `update_ticket(projectSlug, ticketId, title, description, status, priority, tags)` when mapped.
 - Never invent keys or slugs.
 - Use only supported enums:
-  - status: `Backlog`, `ToDo`, `InProgress`, `Done`
+  - status: `Backlog`, `ToDo`, `InProgress`, `CodeReview`, `Done`
   - priority: `Critical`, `High`, `Medium`, `Low`
 - Return created or updated IDs and field diffs.
 
@@ -90,6 +90,8 @@ End-to-end workflow that converts an incomplete feature concept into implementat
 8. For high-impact architecture decisions, always explore options and ask for user choice before finalizing architecture and tickets.
 9. Do not silently implement the first discovered path when meaningful alternatives exist.
 10. Never propose storing long-lived API keys or secrets in browser local storage as a default pattern.
+11. For any MCP write operation (create, update), retry up to 3 times on failure. After 3 failed attempts, inform the user with the exact MCP error and ask: "Continue anyway or stop here?" Do not proceed without explicit user decision.
+12. If the user chooses to continue after MCP failures, report the final failure explicitly and stop the feature workflow.
 
 ## Required Output
 1. Discovery answers and assumptions

@@ -27,15 +27,18 @@ Use this skill for reliable ticket operations in Kira via MCP.
 - Field updates: title, description, status, priority, tags
 
 ## Core Rules
-1. Never invent project slugs or ticket IDs.
-2. If slug is missing for ticket creation, list projects first and ask user to confirm.
-3. If ticket ID is ambiguous or malformed, stop and request correction.
-4. Echo intended changes before write operations when the request is ambiguous.
-5. After every create or update, return the resulting ticket ID and changed fields.
-6. Use only supported values:
-   - status: `Backlog`, `ToDo`, `InProgress`, `Done`
+1. "Read ticket" always means `get_ticket(projectSlug, ticketId)` via Kira MCP. Never use cached, inferred, or locally stored ticket content.
+2. Never invent project slugs or ticket IDs.
+3. If slug is missing for ticket creation, list projects first and ask user to confirm.
+4. If ticket ID is ambiguous or malformed, stop and request correction.
+5. Echo intended changes before write operations when the request is ambiguous.
+6. After every create or update, return the resulting ticket ID and changed fields.
+7. Use only supported values:
+   - status: `Backlog`, `ToDo`, `InProgress`, `CodeReview`, `Done`
    - priority: `Critical`, `High`, `Medium`, `Low`
-7. If tags are provided for update, verify IDs with `list_tags` first.
+8. If tags are provided for update, verify IDs with `list_tags` first (rule 1 applies — always read current ticket first).
+9. For any MCP write operation (create, update), retry up to 3 times on failure. After 3 failed attempts, inform the user with the exact MCP error and ask: "Continue anyway or stop here?" Do not proceed without explicit user decision.
+10. If the user chooses to continue after MCP failures, report the final failure explicitly in output.
 
 ## MCP Workflow
 1. Use exact Kira tools:
@@ -49,11 +52,12 @@ Use this skill for reliable ticket operations in Kira via MCP.
    - execute `create_ticket(projectSlug, title, description, priority)`
    - return created ticket ID and summary
 3. For update requests:
-   - fetch current ticket first with `get_ticket(projectSlug, ticketId)`
+   - read current ticket content with `get_ticket(projectSlug, ticketId)` via Kira MCP
    - apply minimal field changes only
    - execute `update_ticket(projectSlug, ticketId, title, description, status, priority, tags)`
    - return a field diff summary
 4. For read requests:
+   - read ticket using `get_ticket(projectSlug, ticketId)` via Kira MCP
    - return concise state: status, priority, title, tags, updated time if present
 
 ## Required Output Format
