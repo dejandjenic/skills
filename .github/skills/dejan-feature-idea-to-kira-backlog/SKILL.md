@@ -68,6 +68,9 @@ End-to-end workflow that converts an incomplete feature concept into implementat
 - For each proposed ticket:
   - create with `create_ticket(projectSlug, title, description, priority)`, or
   - update with `update_ticket(projectSlug, ticketId, title, description, status, priority, tags)` when mapped.
+- After creating or updating each decomposed ticket:
+  - Add the tag `ImplementationReady` to the ticket.
+  - If an original ticket ID is provided, add a `depends on` relation from the decomposed ticket to the original ticket using the appropriate Kira MCP relation operation.
 - Never invent keys or slugs.
 - Use only supported enums:
   - status: `Backlog`, `ToDo`, `InProgress`, `CodeReview`, `Done`
@@ -98,7 +101,7 @@ End-to-end workflow that converts an incomplete feature concept into implementat
 2. Decision log for high-impact choices: options considered, trade-offs, user selections, and unresolved assumptions
 3. Architecture impact summary
 4. Proposed ticket set
-5. Kira execution results: created and updated ticket IDs
+5. Kira execution results: created and updated ticket IDs, with `ImplementationReady` tag and `depends on` relation applied to each decomposed ticket
 6. Original ticket transition log: start transition (`InProgress`) and completion transition (`Done`)
 7. Remaining open questions and next action
 
