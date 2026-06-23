@@ -29,6 +29,7 @@ Dedicated workflow for reviewing implementation changes against ticket requireme
 2. If the ticket is not already in `CodeReview` status, move it to `CodeReview` immediately.
 3. Examine the current git branch:
    - Identify the branch name (should match the ticket ID pattern).
+   - Report the branch name being reviewed at the start of the review output.
    - List all uncommitted changes using `git status`.
    - List all commits on this branch not yet on main using `git log main..HEAD --oneline`.
    - Show the full diff using `git diff main` or fetch staged changes using `git diff --staged`.
@@ -48,7 +49,8 @@ Dedicated workflow for reviewing implementation changes against ticket requireme
 
 ## Output Format
 - Ticket title and acceptance criteria (from Kira read)
-- Git branch and commits summary
+- Branch being reviewed (explicitly state the branch name)
+- Git commits summary
 - Code diff analysis
 - Acceptance criteria validation: met vs not met
 - Quality findings: issues, risks, and observations
@@ -58,14 +60,15 @@ Dedicated workflow for reviewing implementation changes against ticket requireme
 
 ## Critical Rules
 1. Always read ticket content first via `get_ticket(projectSlug, ticketId)` on Kira MCP. Never assume acceptance criteria.
-2. Code review is based solely on acceptance criteria from Kira, not personal opinion.
-3. Always examine the actual git diff. Never infer changes from discussion or commit messages.
-4. Move ticket to `CodeReview` at the start of the review (step 2).
-5. Always post the full review report as a comment on the Kira ticket using `kira_create_comment` before making any status transition (step 6). The comment must be posted regardless of whether the review passes or fails.
-6. Move ticket to `Done` only if all acceptance criteria are met AND no blockers are identified.
-7. If ticket transition fails, retry up to 3 times. After 3 failed attempts, inform the user with the MCP error details and ask: "Continue anyway or stop here?" Wait for explicit user decision before proceeding.
-8. If ticket transition fails after user decides to continue, report the failure explicitly.
-9. Always inform the user of potential issues, even if only minor concerns.
+2. Always report the branch name being reviewed at the start of the review output. Never proceed without identifying and stating the current branch.
+3. Code review is based solely on acceptance criteria from Kira, not personal opinion.
+4. Always examine the actual git diff. Never infer changes from discussion or commit messages.
+5. Move ticket to `CodeReview` at the start of the review (step 2).
+6. Always post the full review report as a comment on the Kira ticket using `kira_create_comment` before making any status transition (step 6). The comment must be posted regardless of whether the review passes or fails.
+7. Move ticket to `Done` only if all acceptance criteria are met AND no blockers are identified.
+8. If ticket transition fails, retry up to 3 times. After 3 failed attempts, inform the user with the MCP error details and ask: "Continue anyway or stop here?" Wait for explicit user decision before proceeding.
+9. If ticket transition fails after user decides to continue, report the failure explicitly.
+10. Always inform the user of potential issues, even if only minor concerns.
 
 ## Quality Bar
 - Complete acceptance criteria validation against actual code changes.
