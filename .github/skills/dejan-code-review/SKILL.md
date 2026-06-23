@@ -33,45 +33,58 @@ Dedicated workflow for reviewing implementation changes against ticket requireme
    - List all uncommitted changes using `git status`.
    - List all commits on this branch not yet on main using `git log main..HEAD --oneline`.
    - Show the full diff using `git diff main` or fetch staged changes using `git diff --staged`.
-4. Analyze the implementation against ticket acceptance criteria:
+4. Find the pull request for the current branch using GitHub MCP tools.
+5. Analyze the implementation against ticket acceptance criteria:
    - Verify each acceptance criterion is addressed by the code changes.
    - Check for incomplete work or missing functionality.
    - Identify any scope creep or unrelated changes.
    - Assess code quality: structure, tests, error handling, performance.
-5. Document all findings in a review report:
+6. Document all findings in a review report:
    - Criteria met vs not met
    - Potential issues and risks
    - Quality observations
-6. Post the review report as a comment on the Kira ticket using `kira_create_comment(projectSlug, ticketId, body)` with the full review results formatted in markdown.
-7. If there are any unmet criteria, missing tests, or quality concerns, inform the user and keep ticket in `CodeReview` status.
-8. If all criteria are met, no blockers are identified, and quality is acceptable, move ticket to `Done` status.
-9. Return the review report with ticket transition result.
+7. Post the review report as a comment on the Kira ticket using `kira_create_comment(projectSlug, ticketId, body)` with the full review results formatted in markdown.
+8. If there are any unmet criteria, missing tests, or quality concerns:
+   - Post the review findings as a comment on the GitHub PR using GitHub MCP tools.
+   - Inform the user and keep ticket in `CodeReview` status.
+9. If all criteria are met, no blockers are identified, and quality is acceptable:
+   - Approve the pull request using GitHub MCP tools.
+   - Merge the pull request using GitHub MCP tools.
+   - Move ticket to `Done` status.
+10. Return the review report with ticket transition result and PR action taken.
 
 ## Output Format
 - Ticket title and acceptance criteria (from Kira read)
 - Branch being reviewed (explicitly state the branch name)
+- GitHub PR found (with PR URL)
 - Git commits summary
 - Code diff analysis
 - Acceptance criteria validation: met vs not met
 - Quality findings: issues, risks, and observations
 - Recommendation: proceed to Done or hold in CodeReview
 - Kira comment posted (confirmation)
+- PR action taken: approved and merged, or commented with findings
 - Ticket transition result
 
 ## Critical Rules
 1. Always read ticket content first via `get_ticket(projectSlug, ticketId)` on Kira MCP. Never assume acceptance criteria.
 2. Always report the branch name being reviewed at the start of the review output. Never proceed without identifying and stating the current branch.
-3. Code review is based solely on acceptance criteria from Kira, not personal opinion.
-4. Always examine the actual git diff. Never infer changes from discussion or commit messages.
-5. Move ticket to `CodeReview` at the start of the review (step 2).
-6. Always post the full review report as a comment on the Kira ticket using `kira_create_comment` before making any status transition (step 6). The comment must be posted regardless of whether the review passes or fails.
-7. Move ticket to `Done` only if all acceptance criteria are met AND no blockers are identified.
-8. If ticket transition fails, retry up to 3 times. After 3 failed attempts, inform the user with the MCP error details and ask: "Continue anyway or stop here?" Wait for explicit user decision before proceeding.
-9. If ticket transition fails after user decides to continue, report the failure explicitly.
-10. Always inform the user of potential issues, even if only minor concerns.
+3. Always find the pull request for the branch being reviewed using GitHub MCP tools. Never proceed without identifying the PR.
+4. Code review is based solely on acceptance criteria from Kira, not personal opinion.
+5. Always examine the actual git diff. Never infer changes from discussion or commit messages.
+6. Move ticket to `CodeReview` at the start of the review (step 2).
+7. Always post the full review report as a comment on the Kira ticket using `kira_create_comment` before making any status transition or PR action. The comment must be posted regardless of whether the review passes or fails.
+8. If the review passes: approve and merge the PR using GitHub MCP tools, then move ticket to `Done`.
+9. If the review fails: post the review findings as a comment on the GitHub PR using GitHub MCP tools, then keep ticket in `CodeReview`.
+10. Move ticket to `Done` only if all acceptance criteria are met AND no blockers are identified AND the PR has been successfully merged.
+11. If ticket transition fails, retry up to 3 times. After 3 failed attempts, inform the user with the MCP error details and ask: "Continue anyway or stop here?" Wait for explicit user decision before proceeding.
+12. If ticket transition fails after user decides to continue, report the failure explicitly.
+13. Always inform the user of potential issues, even if only minor concerns.
 
 ## Quality Bar
 - Complete acceptance criteria validation against actual code changes.
 - Clear separation of facts (criteria met/not met) from recommendations.
 - Explicit list of any unmet criteria or blockers.
 - No silent approvals — user sees full analysis before ticket moves to Done.
+- PR is approved and merged only when review passes completely.
+- PR receives detailed comment with findings when review fails.

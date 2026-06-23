@@ -45,9 +45,11 @@ disable-model-invocation: false
 8. Run available checks and report outcomes.
 9. If checks pass, ask the user for permission to commit. Proposed commit message must include the ticket ID, for example: `PROJ-123: <short description of change>`. Do not commit without explicit user approval.
 10. If the user approves, stage all changed files and run `git commit -m "<ticket-id>: <description>"`.
-11. Post a short implementation comment on the Kira ticket using `kira_create_comment(projectSlug, ticketId, body)` summarizing what was changed, which files were modified, and any risks or follow-up notes.
-12. If implementation is successful and a ticket ID is provided, move the ticket status to `CodeReview`.
-13. Summarize changed files, risks, and next steps, including ticket transition results and git branch/commit info.
+11. Push the branch to the remote repository using `git push -u origin <branch-name>`.
+12. Create a pull request on GitHub using the GitHub MCP tools. The PR title should include the ticket ID (e.g., `PROJ-123: Short description`). The PR body should summarize the changes, list modified files, and reference the ticket.
+13. Post a short implementation comment on the Kira ticket using `kira_create_comment(projectSlug, ticketId, body)` summarizing what was changed, which files were modified, any risks or follow-up notes, and the PR URL.
+14. If implementation is successful and a ticket ID is provided, move the ticket status to `CodeReview`.
+15. Summarize changed files, risks, and next steps, including ticket transition results, git branch/commit info, and PR URL.
 
 ## Output Format
 - What changed
@@ -55,6 +57,8 @@ disable-model-invocation: false
 - Validation performed
 - Git branch created or checked out
 - Commit message proposed and user approval result
+- Branch pushed to remote
+- GitHub PR created (with PR URL)
 - Kira implementation comment posted (confirmation)
 - Ticket transition log: start transition (`InProgress`) with agent tag applied, and completion transition (`CodeReview`) when ticket context is provided
 - Follow-up options
@@ -66,10 +70,11 @@ disable-model-invocation: false
 4. Ticket status transitions are mandatory when a ticket ID is provided: `InProgress` before coding, `CodeReview` after successful implementation. When transitioning to `InProgress`, also add the agent identity tag (`Kilo`, `Claude`, or `OpenCode`) to the ticket.
 5. Always create or check out a git branch named after the ticket ID before any file edits. Never commit directly to the current branch without branching first.
 6. Never commit without explicit user approval. Always show the full proposed commit message and wait for a yes/no before running `git commit`.
-7. After a successful commit, always post a short implementation comment on the Kira ticket using `kira_create_comment` before moving the ticket to `CodeReview`. The comment must summarize what was changed and which files were modified.
-8. When fixing code review issues, always read the ticket comments first using `kira_list_comments` to understand the review feedback. After applying fixes, post a comment explicitly listing which review items were addressed and how.
-9. If a ticket status transition via Kira MCP fails, retry up to 3 times. After 3 failed attempts, inform the user with the MCP error details and ask: "Continue anyway or stop here?" Wait for explicit user decision before proceeding.
-10. If ticket transition fails after user decides to continue, report the failure explicitly.
+7. After a successful commit, always push the branch to the remote and create a GitHub PR using the GitHub MCP tools before moving the ticket to `CodeReview`. The PR must reference the ticket ID in the title and body.
+8. After creating the PR, always post a short implementation comment on the Kira ticket using `kira_create_comment` before moving the ticket to `CodeReview`. The comment must summarize what was changed, which files were modified, and include the PR URL.
+9. When fixing code review issues, always read the ticket comments first using `kira_list_comments` to understand the review feedback. After applying fixes, post a comment explicitly listing which review items were addressed and how.
+10. If a ticket status transition via Kira MCP fails, retry up to 3 times. After 3 failed attempts, inform the user with the MCP error details and ask: "Continue anyway or stop here?" Wait for explicit user decision before proceeding.
+11. If ticket transition fails after user decides to continue, report the failure explicitly.
 
 ## Quality Bar
 - Prefer minimal diffs and preserve existing style.
