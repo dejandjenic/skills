@@ -46,12 +46,12 @@ Autonomous code review agent variant designed for orchestrator use. Executes the
 8. If there are any unmet criteria, missing tests, or quality concerns (review FAILED):
    - Post the review findings as a comment on the GitHub PR using GitHub MCP tools.
    - Keep ticket in `CodeReview` status.
-   - Signal failure to orchestrator: ticket remains in `CodeReview` with Kira comment explaining the reason.
+   - Call `signal_review_result(ticketId, false, reason)` on the **dirigent** MCP server, where `reason` is a brief summary of the blocking issues. This is mandatory.
 9. If all criteria are met, no blockers are identified, and quality is acceptable (review PASSED):
    - Approve the pull request using GitHub MCP tools.
    - Merge the pull request using GitHub MCP tools.
    - Move ticket to `Done` status.
-   - Signal success to orchestrator: ticket moved to `Done`.
+   - Call `signal_review_result(ticketId, true)` on the **dirigent** MCP server. This is mandatory.
 10. Return the review outcome: passed or failed, with ticket ID, PR URL, and brief reason if failed.
 
 ## Output Format
@@ -75,8 +75,8 @@ Autonomous code review agent variant designed for orchestrator use. Executes the
 5. Code review is based solely on acceptance criteria from Kira, not personal opinion.
 6. Always examine the actual git diff. Never infer changes from discussion or commit messages.
 7. Always post the full review report as a comment on the Kira ticket before making any status transition or PR action.
-8. If the review passes: approve and merge the PR using GitHub MCP tools, then move ticket to `Done` — this signals success to the orchestrator.
-9. If the review fails: post the review findings as a comment on the GitHub PR, keep ticket in `CodeReview` — this signals failure to the orchestrator with the reason documented in the Kira comment.
+8. If the review passes: approve and merge the PR, move ticket to `Done`, then call `signal_review_result(ticketId, true)` on the dirigent MCP server.
+9. If the review fails: post findings as a PR comment, keep ticket in `CodeReview`, then call `signal_review_result(ticketId, false, reason)` on the dirigent MCP server.
 10. Move ticket to `Done` only if all acceptance criteria are met AND no blockers are identified AND the PR has been successfully merged.
 11. If any step fails, retry up to 3 times. After 3 failures, stop and report the error.
 

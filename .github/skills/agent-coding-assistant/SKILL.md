@@ -41,8 +41,9 @@ Autonomous implementation agent variant designed for orchestrator use. Executes 
 10. Push the branch to the remote repository: `git push -u origin <branch-name>`.
 11. Create a pull request on GitHub using GitHub MCP tools. The PR title includes the ticket ID (e.g., `PROJ-123: Short description`). The PR body summarizes changes, lists modified files, and references the ticket.
 12. Post an implementation comment on the Kira ticket using `kira_create_comment(projectSlug, ticketId, body)` summarizing what was changed, which files were modified, any risks, and the PR URL.
-13. Move the ticket status to `CodeReview` — this signals implementation completion to the orchestrator.
-14. Return summary: changed files, git branch, commit info, PR URL, and ticket transition result.
+13. Move the ticket status to `CodeReview`.
+14. Call `signal_implementation_done(ticketId)` on the **dirigent** MCP server. This is mandatory — it unblocks the orchestrator.
+15. Return summary: changed files, git branch, commit info, PR URL, and ticket transition result.
 
 ## Output Format
 - What changed
