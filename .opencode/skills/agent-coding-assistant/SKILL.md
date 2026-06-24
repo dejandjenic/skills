@@ -67,7 +67,7 @@ Autonomous implementation agent variant designed for orchestrator use. Executes 
 8. Commit immediately after changes — do not wait for approval.
 9. After commit, always push the branch and create a GitHub PR using GitHub MCP tools.
 10. After creating the PR, always post a comment on the Kira ticket before moving to `CodeReview`.
-11. Moving ticket to `CodeReview` is the completion signal to the orchestrator — this must always happen after successful implementation.
+11. After moving ticket to `CodeReview`, always call `signal_implementation_done(ticketId)` on the dirigent MCP server — this is the actual signal that unblocks the orchestrator.
 12. If any step fails, retry up to 3 times. After 3 failures, stop and report the error.
 
 ## Quality Bar
