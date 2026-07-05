@@ -25,6 +25,9 @@ Autonomous code review agent variant designed for orchestrator use. Executes the
 - Ticket ID, for example `PROJ-123` (required)
 
 ## Workflow
+
+**Before anything else:** call `signal_agent_started(ticketId)` on the **dirigent** MCP server. This is mandatory and must be your very first action — it lets the orchestrator detect a stuck/wedged session quickly instead of waiting for the full timeout.
+
 1. Read the full ticket content using `get_ticket(projectSlug, ticketId)` via Kira MCP to obtain acceptance criteria and requirements.
 2. If the ticket is not already in `CodeReview` status, move it to `CodeReview` immediately.
 3. Examine the current git branch:
@@ -79,6 +82,7 @@ Autonomous code review agent variant designed for orchestrator use. Executes the
 9. If the review fails: post findings as a PR comment, keep ticket in `CodeReview`, then call `signal_review_result(ticketId, false, reason)` on the dirigent MCP server.
 10. Move ticket to `Done` only if all acceptance criteria are met AND no blockers are identified AND the PR has been successfully merged.
 11. If any step fails, retry up to 3 times. After 3 failures, stop and report the error.
+12. Call `signal_agent_started(ticketId)` on the dirigent MCP server as your very first action, before any other step. This is mandatory and separate from `signal_review_result`.
 
 ## Quality Bar
 - Complete acceptance criteria validation against actual code changes.

@@ -25,6 +25,9 @@ Autonomous implementation agent variant designed for orchestrator use. Executes 
 - Ticket ID, for example `PROJ-123` (required)
 
 ## Workflow
+
+**Before anything else:** call `signal_agent_started(ticketId)` on the **dirigent** MCP server. This is mandatory and must be your very first action — it lets the orchestrator detect a stuck/wedged session quickly instead of waiting for the full timeout.
+
 1. Checkout the latest main branch: run `git checkout main && git pull origin main`.
 2. Read the full ticket content using `get_ticket(projectSlug, ticketId)` via Kira MCP.
    - Derive all acceptance criteria, scope, and constraints from the ticket content.
@@ -69,6 +72,7 @@ Autonomous implementation agent variant designed for orchestrator use. Executes 
 10. After creating the PR, always post a comment on the Kira ticket before moving to `CodeReview`.
 11. After moving ticket to `CodeReview`, always call `signal_implementation_done(ticketId)` on the dirigent MCP server — this is the actual signal that unblocks the orchestrator.
 12. If any step fails, retry up to 3 times. After 3 failures, stop and report the error.
+13. Call `signal_agent_started(ticketId)` on the dirigent MCP server as your very first action, before any other step. This is mandatory and separate from `signal_implementation_done`.
 
 ## Quality Bar
 - Prefer minimal diffs and preserve existing style.
