@@ -26,7 +26,7 @@ Autonomous code review agent variant designed for orchestrator use. Executes the
 
 ## Workflow
 
-**Before anything else:** call `signal_agent_started(ticketId)` on the **dirigent** MCP server. This is mandatory and must be your very first action — it lets the orchestrator detect a stuck/wedged session quickly instead of waiting for the full timeout.
+**Step zero, before reading anything else:** call `signal_agent_started(ticketId)` on the **dirigent** MCP server. Do this literally before your first ticket read or git command. A separate process is waiting on this specific tool call to know you're alive — nothing else you do substitutes for it.
 
 1. Read the full ticket content using `get_ticket(projectSlug, ticketId)` via Kira MCP to obtain acceptance criteria and requirements.
 2. If the ticket is not already in `CodeReview` status, move it to `CodeReview` immediately.
@@ -55,7 +55,9 @@ Autonomous code review agent variant designed for orchestrator use. Executes the
    - Merge the pull request using GitHub MCP tools.
    - Move ticket to `Done` status.
    - Call `signal_review_result(ticketId, true)` on the **dirigent** MCP server. This is mandatory.
-10. Return the review outcome: passed or failed, with ticket ID, PR URL, and brief reason if failed.
+10. Only after the `signal_review_result` call in step 8 or 9 has actually completed, return the review outcome: passed or failed, with ticket ID, PR URL, and brief reason if failed.
+
+**This task is not finished when you write your summary — it is finished when `signal_review_result` has been called.** A separate orchestrator process is blocked waiting on that specific tool call; nothing else you do (posting the Kira comment, merging the PR, writing a great summary) reaches it. If you notice you're about to end your turn without having made that call, stop and make it now, before responding. A review that isn't signaled is indistinguishable, from the orchestrator's side, from a review that never happened at all — no matter how correct or complete your actual work was.
 
 ## Output Format
 - Ticket title and acceptance criteria (from Kira read)
@@ -82,7 +84,8 @@ Autonomous code review agent variant designed for orchestrator use. Executes the
 9. If the review fails: post findings as a PR comment, keep ticket in `CodeReview`, then call `signal_review_result(ticketId, false, reason)` on the dirigent MCP server.
 10. Move ticket to `Done` only if all acceptance criteria are met AND no blockers are identified AND the PR has been successfully merged.
 11. If any step fails, retry up to 3 times. After 3 failures, stop and report the error.
-12. Call `signal_agent_started(ticketId)` on the dirigent MCP server as your very first action, before any other step. This is mandatory and separate from `signal_review_result`.
+12. Call `signal_agent_started(ticketId)` on the dirigent MCP server as literally your first tool call, before reading the ticket or running any git command. This is separate from `signal_review_result` and equally mandatory.
+13. `signal_agent_started` and `signal_review_result` are the only two things the orchestrator can actually observe from this session — everything else (comments, PR merges, your summary) is invisible to it. Skipping either call makes an otherwise-perfect review indistinguishable from a session that never ran. Do not end your turn without having made both.
 
 ## Quality Bar
 - Complete acceptance criteria validation against actual code changes.

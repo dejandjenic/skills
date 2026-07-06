@@ -26,7 +26,7 @@ Autonomous implementation agent variant designed for orchestrator use. Executes 
 
 ## Workflow
 
-**Before anything else:** call `signal_agent_started(ticketId)` on the **dirigent** MCP server. This is mandatory and must be your very first action — it lets the orchestrator detect a stuck/wedged session quickly instead of waiting for the full timeout.
+**Step zero, before reading anything else:** call `signal_agent_started(ticketId)` on the **dirigent** MCP server. Do this literally before your first git command or ticket read. A separate process is waiting on this specific tool call to know you're alive — nothing else you do substitutes for it.
 
 1. Checkout the latest main branch: run `git checkout main && git pull origin main`.
 2. Read the full ticket content using `get_ticket(projectSlug, ticketId)` via Kira MCP.
@@ -46,7 +46,9 @@ Autonomous implementation agent variant designed for orchestrator use. Executes 
 12. Post an implementation comment on the Kira ticket using `kira_create_comment(projectSlug, ticketId, body)` summarizing what was changed, which files were modified, any risks, and the PR URL.
 13. Move the ticket status to `CodeReview`.
 14. Call `signal_implementation_done(ticketId)` on the **dirigent** MCP server. This is mandatory — it unblocks the orchestrator.
-15. Return summary: changed files, git branch, commit info, PR URL, and ticket transition result.
+15. Only after the `signal_implementation_done` call in step 14 has actually completed, return summary: changed files, git branch, commit info, PR URL, and ticket transition result.
+
+**This task is not finished when you write your summary — it is finished when `signal_implementation_done` has been called.** A separate orchestrator process is blocked waiting on that specific tool call; nothing else you do (the commit, the PR, the Kira comment, a great summary) reaches it. If you notice you're about to end your turn without having made that call, stop and make it now, before responding. An implementation that isn't signaled is indistinguishable, from the orchestrator's side, from an implementation that never happened at all — no matter how correct or complete your actual work was.
 
 ## Output Format
 - What changed
@@ -72,7 +74,8 @@ Autonomous implementation agent variant designed for orchestrator use. Executes 
 10. After creating the PR, always post a comment on the Kira ticket before moving to `CodeReview`.
 11. After moving ticket to `CodeReview`, always call `signal_implementation_done(ticketId)` on the dirigent MCP server — this is the actual signal that unblocks the orchestrator.
 12. If any step fails, retry up to 3 times. After 3 failures, stop and report the error.
-13. Call `signal_agent_started(ticketId)` on the dirigent MCP server as your very first action, before any other step. This is mandatory and separate from `signal_implementation_done`.
+13. Call `signal_agent_started(ticketId)` on the dirigent MCP server as literally your first tool call, before reading the ticket or running any git command. This is separate from `signal_implementation_done` and equally mandatory.
+14. `signal_agent_started` and `signal_implementation_done` are the only two things the orchestrator can actually observe from this session — everything else (the commit, the PR, your summary) is invisible to it. Skipping either call makes an otherwise-perfect implementation indistinguishable from a session that never ran. Do not end your turn without having made both.
 
 ## Quality Bar
 - Prefer minimal diffs and preserve existing style.
