@@ -68,6 +68,11 @@ internal static class ToolsEngine
                     {
                         Console.WriteLine($"[dry-run] {target}: would install '{bundle.Name}/post-commit.sh' as .githooks/post-commit and set core.hooksPath");
                     }
+
+                    if (bundle.GitignorePath is not null)
+                    {
+                        Console.WriteLine($"[dry-run] {target}: would add missing '{bundle.Name}/gitignore.txt' entries to .gitignore");
+                    }
                 }
             }
 
@@ -123,6 +128,11 @@ internal static class ToolsEngine
                     Console.Error.WriteLine($"[{target}] {bundle.Name}: setup.sh exited with code {exitCode}");
                     return false;
                 }
+            }
+
+            if (bundle.GitignorePath is not null)
+            {
+                await MergeGitignoreAsync(bundle, target);
             }
 
             if (bundle.PostCommitScriptPath is not null)
@@ -264,6 +274,45 @@ internal static class ToolsEngine
         await RunGitAsync(target, "config", "core.hooksPath", ".githooks");
 
         Console.WriteLine($"[{target}] {bundle.Name}: hook installed at {hookPath}");
+    }
+
+    private static async Task MergeGitignoreAsync(ToolBundle bundle, string target)
+    {
+        var entries = (await File.ReadAllLinesAsync(bundle.GitignorePath!))
+            .Select(static line => line.TrimEnd())
+            .Where(static line => line.Length > 0)
+            .ToArray();
+
+        if (entries.Length == 0)
+        {
+            return;
+        }
+
+        var gitignorePath = Path.Combine(target, ".gitignore");
+        var existingLines = File.Exists(gitignorePath)
+            ? (await File.ReadAllLinesAsync(gitignorePath)).Select(static line => line.TrimEnd()).ToList()
+            : new List<string>();
+
+        var existingSet = new HashSet<string>(existingLines, StringComparer.Ordinal);
+        var missing = entries.Where(entry => !existingSet.Contains(entry)).ToArray();
+
+        if (missing.Length == 0)
+        {
+            return;
+        }
+
+        var updatedLines = new List<string>(existingLines);
+        if (updatedLines.Count > 0)
+        {
+            updatedLines.Add(string.Empty);
+        }
+
+        updatedLines.Add($"# {bundle.Name}");
+        updatedLines.AddRange(missing);
+
+        await File.WriteAllTextAsync(gitignorePath, string.Join('\n', updatedLines) + "\n");
+
+        Console.WriteLine($"[{target}] {bundle.Name}: added {missing.Length} entr{(missing.Length == 1 ? "y" : "ies")} to .gitignore");
     }
 
     private static bool IsGitRepository(string path)

@@ -285,7 +285,7 @@ internal sealed record ContentCatalog(IReadOnlyList<string> Skills, IReadOnlyLis
     }
 }
 
-internal sealed record ToolBundle(string Name, string? SetupScriptPath, string? PostCommitScriptPath);
+internal sealed record ToolBundle(string Name, string? SetupScriptPath, string? PostCommitScriptPath, string? GitignorePath);
 
 internal static class ToolBundleCatalog
 {
@@ -298,8 +298,11 @@ internal static class ToolBundleCatalog
                 .Select(static dir => new ToolBundle(
                     Path.GetFileName(dir)!,
                     FindScript(dir, "setup.sh"),
-                    FindScript(dir, "post-commit.sh")))
-                .Where(static bundle => bundle.SetupScriptPath is not null || bundle.PostCommitScriptPath is not null)
+                    FindScript(dir, "post-commit.sh"),
+                    FindScript(dir, "gitignore.txt")))
+                .Where(static bundle => bundle.SetupScriptPath is not null
+                    || bundle.PostCommitScriptPath is not null
+                    || bundle.GitignorePath is not null)
                 .ToArray()
             : Array.Empty<ToolBundle>();
 
