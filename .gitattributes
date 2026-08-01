@@ -1,1 +1,1 @@
-.github/tools/**/*.sh text eol=lf
+.github/tools/** text eol=lf
