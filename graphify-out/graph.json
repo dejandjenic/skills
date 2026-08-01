@@ -1,0 +1,4635 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "post-commit.sh",
+      "file_type": "code",
+      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "post-commit.sh",
+      "id": "github_tools_graphify_openwiki_post_commit"
+    },
+    {
+      "label": "post-commit.sh script",
+      "file_type": "code",
+      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "post-commit.sh script",
+      "id": "github_tools_graphify_openwiki_post_commit_sh__entry"
+    },
+    {
+      "label": "GRAPHIFY_CHANGED",
+      "file_type": "code",
+      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
+      "source_location": "L34",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "graphify_changed",
+      "id": "github_tools_graphify_openwiki_post_commit_graphify_changed"
+    },
+    {
+      "label": "setup.sh",
+      "file_type": "code",
+      "source_file": ".github/tools/graphify-openwiki/setup.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "setup.sh",
+      "id": "github_tools_graphify_openwiki_setup"
+    },
+    {
+      "label": "setup.sh script",
+      "file_type": "code",
+      "source_file": ".github/tools/graphify-openwiki/setup.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "setup.sh script",
+      "id": "github_tools_graphify_openwiki_setup_sh__entry"
+    },
+    {
+      "label": "skills.sln",
+      "file_type": "code",
+      "source_file": "skills.sln",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "skills.sln",
+      "id": "skills"
+    },
+    {
+      "label": "src",
+      "file_type": "code",
+      "source_file": "src",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "src",
+      "id": "src"
+    },
+    {
+      "label": "Dejan.Skills.Tool",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Dejan.Skills.Tool.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "dejan.skills.tool",
+      "id": "src_dejan_skills_tool_dejan_skills_tool"
+    },
+    {
+      "label": "net8.0",
+      "file_type": "concept",
+      "source_file": "src/Dejan.Skills.Tool/Dejan.Skills.Tool.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "net8.0",
+      "id": "framework_net8_0"
+    },
+    {
+      "label": "net9.0",
+      "file_type": "concept",
+      "source_file": "src/Dejan.Skills.Tool/Dejan.Skills.Tool.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "net9.0",
+      "id": "framework_net9_0"
+    },
+    {
+      "label": "Microsoft.NET.Sdk",
+      "file_type": "concept",
+      "source_file": "src/Dejan.Skills.Tool/Dejan.Skills.Tool.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "microsoft.net.sdk",
+      "id": "sdk_microsoft_net_sdk"
+    },
+    {
+      "label": "Program.cs",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "program.cs",
+      "id": "src_dejan_skills_tool_program"
+    },
+    {
+      "label": "Dejan.Skills.Tool",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L4",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "Dejan.Skills.Tool"
+      },
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "dejan.skills.tool",
+      "id": "csharp_namespace:13444712d5c70201"
+    },
+    {
+      "label": "Program",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L6",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "program",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_program"
+    },
+    {
+      "label": ".Main()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L8",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".main()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_program_main"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "task",
+      "id": "src_dejan_skills_tool_program_cs_task"
+    },
+    {
+      "label": "CommandLineApp",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L32",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "commandlineapp",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp"
+    },
+    {
+      "label": ".RunAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L34",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".runasync()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync"
+    },
+    {
+      "label": ".ListAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L56",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".listasync()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync"
+    },
+    {
+      "label": ".InitAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L98",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".initasync()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_initasync"
+    },
+    {
+      "label": ".BootstrapAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L105",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".bootstrapasync()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_bootstrapasync"
+    },
+    {
+      "label": ".UpdateAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L112",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".updateasync()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_updateasync"
+    },
+    {
+      "label": ".ToolsAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L119",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".toolsasync()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_toolsasync"
+    },
+    {
+      "label": ".IsHelp()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L125",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".ishelp()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_ishelp"
+    },
+    {
+      "label": ".PrintUsage()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L130",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".printusage()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_printusage"
+    },
+    {
+      "label": "CommandLineException",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L172",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "commandlineexception",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineexception"
+    },
+    {
+      "label": "Exception",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "exception",
+      "id": "exception"
+    },
+    {
+      "label": "ParsedArguments",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L180",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "parsedarguments",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments"
+    },
+    {
+      "label": "Dictionary",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "dictionary",
+      "id": "dictionary"
+    },
+    {
+      "label": ".Contains()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L189",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".contains()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_contains"
+    },
+    {
+      "label": ".GetString()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L194",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".getstring()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getstring"
+    },
+    {
+      "label": ".GetCsv()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L199",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": ".getcsv()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getcsv"
+    },
+    {
+      "label": "IReadOnlyList",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "ireadonlylist",
+      "id": "src_dejan_skills_tool_program_cs_ireadonlylist"
+    },
+    {
+      "label": "ArgumentParser",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L213",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "argumentparser",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser"
+    },
+    {
+      "label": "HashSet",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "hashset",
+      "id": "hashset"
+    },
+    {
+      "label": ".Parse()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L223",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".parse()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser_parse"
+    },
+    {
+      "label": "IEnumerable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "ienumerable",
+      "id": "src_dejan_skills_tool_program_cs_ienumerable"
+    },
+    {
+      "label": "SyncCommand",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L279",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "synccommand",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_synccommand"
+    },
+    {
+      "label": "SyncOptions",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L286",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "syncoptions",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions"
+    },
+    {
+      "label": "string",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "string",
+      "id": "src_dejan_skills_tool_program_cs_string"
+    },
+    {
+      "label": ".FromArguments()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L303",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": ".fromarguments()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments"
+    },
+    {
+      "label": ".ToManifest()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L380",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".tomanifest()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_tomanifest"
+    },
+    {
+      "label": ".BuildDefaultInclude()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L390",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": ".builddefaultinclude()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_builddefaultinclude"
+    },
+    {
+      "label": "PlatformTarget",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L419",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "platformtarget",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget"
+    },
+    {
+      "label": ".TryParse()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L427",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": ".tryparse()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget_tryparse"
+    },
+    {
+      "label": ".Parse()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L446",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": ".parse()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget_parse"
+    },
+    {
+      "label": "GitHubRepository",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L454",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "githubrepository",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository"
+    },
+    {
+      "label": ".Parse()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L456",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".parse()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_parse"
+    },
+    {
+      "label": ".ToString()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L478",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": ".tostring()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_tostring"
+    },
+    {
+      "label": ".TrimGitSuffix()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L483",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".trimgitsuffix()",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_trimgitsuffix"
+    },
+    {
+      "label": "SyncManifest",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L491",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "syncmanifest",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_syncmanifest"
+    },
+    {
+      "label": "SyncSource",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L493",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "syncsource",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_syncsource"
+    },
+    {
+      "label": "SyncContent",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L495",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "synccontent",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_synccontent"
+    },
+    {
+      "label": "SyncManifestJsonContext",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L497",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s66"
+        ]
+      },
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "syncmanifestjsoncontext",
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_syncmanifestjsoncontext"
+    },
+    {
+      "label": "JsonSerializerContext",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "jsonserializercontext",
+      "id": "jsonserializercontext"
+    },
+    {
+      "label": "SyncEngine.cs",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "syncengine.cs",
+      "id": "src_dejan_skills_tool_syncengine"
+    },
+    {
+      "label": "SyncEngine",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L7",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "syncengine",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine"
+    },
+    {
+      "label": ".ExecuteAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L9",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".executeasync()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "task",
+      "id": "src_dejan_skills_tool_syncengine_cs_task"
+    },
+    {
+      "label": ".BuildStaleManagedFiles()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L84",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".buildstalemanagedfiles()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_buildstalemanagedfiles"
+    },
+    {
+      "label": "IReadOnlyList",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "ireadonlylist",
+      "id": "src_dejan_skills_tool_syncengine_cs_ireadonlylist"
+    },
+    {
+      "label": ".DeleteManagedFiles()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L92",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".deletemanagedfiles()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_deletemanagedfiles"
+    },
+    {
+      "label": "IEnumerable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "ienumerable",
+      "id": "src_dejan_skills_tool_syncengine_cs_ienumerable"
+    },
+    {
+      "label": ".DeleteEmptyParents()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L123",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": ".deleteemptyparents()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_deleteemptyparents"
+    },
+    {
+      "label": "SourceSnapshot",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L140",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "sourcesnapshot",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot"
+    },
+    {
+      "label": ".OpenAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L142",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": ".openasync()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync"
+    },
+    {
+      "label": "ISourceSnapshot",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L158",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "isourcesnapshot",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_isourcesnapshot"
+    },
+    {
+      "label": "IDisposable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "idisposable",
+      "id": "idisposable"
+    },
+    {
+      "label": "LocalSourceSnapshot",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L163",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "localsourcesnapshot",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot"
+    },
+    {
+      "label": ".Open()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L172",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": ".open()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot_open"
+    },
+    {
+      "label": ".Dispose()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L183",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": ".dispose()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot_dispose"
+    },
+    {
+      "label": "GitHubArchiveSnapshot",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L188",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "githubarchivesnapshot",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot"
+    },
+    {
+      "label": "string",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "string",
+      "id": "src_dejan_skills_tool_syncengine_cs_string"
+    },
+    {
+      "label": ".DownloadAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L200",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": ".downloadasync()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_downloadasync"
+    },
+    {
+      "label": ".Dispose()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L246",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": ".dispose()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_dispose"
+    },
+    {
+      "label": "ContentCatalog",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L255",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "contentcatalog",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog"
+    },
+    {
+      "label": ".Discover()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L257",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".discover()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog_discover"
+    },
+    {
+      "label": "ToolBundle",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L288",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "toolbundle",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundle"
+    },
+    {
+      "label": "ToolBundleCatalog",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L290",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "toolbundlecatalog",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog"
+    },
+    {
+      "label": ".Discover()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L292",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".discover()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_discover"
+    },
+    {
+      "label": ".FindScript()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L324",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".findscript()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_findscript"
+    },
+    {
+      "label": "SyncPlan",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L331",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "syncplan",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan"
+    },
+    {
+      "label": ".Create()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L353",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".create()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_create"
+    },
+    {
+      "label": ".ValidateOverwritePolicy()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L393",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".validateoverwritepolicy()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_validateoverwritepolicy"
+    },
+    {
+      "label": ".Copy()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L416",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".copy()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_copy"
+    },
+    {
+      "label": ".IsClaudeSkillDefinition()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L439",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".isclaudeskilldefinition()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_isclaudeskilldefinition"
+    },
+    {
+      "label": ".GetManagedFiles()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L446",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".getmanagedfiles()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_getmanagedfiles"
+    },
+    {
+      "label": ".SelectItems()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L455",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".selectitems()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_selectitems"
+    },
+    {
+      "label": ".AddDirectoryOperations()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L472",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".adddirectoryoperations()",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_adddirectoryoperations"
+    },
+    {
+      "label": "ICollection",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "icollection",
+      "id": "icollection"
+    },
+    {
+      "label": "CopyOperation",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L483",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s89"
+        ]
+      },
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "copyoperation",
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_copyoperation"
+    },
+    {
+      "label": "ToolsEngine.cs",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "toolsengine.cs",
+      "id": "src_dejan_skills_tool_toolsengine"
+    },
+    {
+      "label": "ToolsOptions",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "toolsoptions",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions"
+    },
+    {
+      "label": ".FromArguments()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L14",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".fromarguments()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions_fromarguments"
+    },
+    {
+      "label": "ToolsEngine",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L33",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "toolsengine",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine"
+    },
+    {
+      "label": ".ExecuteAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L35",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".executeasync()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_executeasync"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "task",
+      "id": "src_dejan_skills_tool_toolsengine_cs_task"
+    },
+    {
+      "label": ".RunBundleAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L118",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".runbundleasync()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbundleasync"
+    },
+    {
+      "label": ".RunBashScriptAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L152",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".runbashscriptasync()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbashscriptasync"
+    },
+    {
+      "label": "string",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "string",
+      "id": "src_dejan_skills_tool_toolsengine_cs_string"
+    },
+    {
+      "label": ".ResolveBashExecutable()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L182",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".resolvebashexecutable()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_resolvebashexecutable"
+    },
+    {
+      "label": ".FindNearGitInstall()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L219",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".findneargitinstall()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findneargitinstall"
+    },
+    {
+      "label": ".FindAtWellKnownGitLocations()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L244",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".findatwellknowngitlocations()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findatwellknowngitlocations"
+    },
+    {
+      "label": ".FindInPath()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L276",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".findinpath()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findinpath"
+    },
+    {
+      "label": ".InstallHookAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L310",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".installhookasync()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_installhookasync"
+    },
+    {
+      "label": ".MergeGitignoreAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L358",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".mergegitignoreasync()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_mergegitignoreasync"
+    },
+    {
+      "label": ".IsGitRepository()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L397",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".isgitrepository()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_isgitrepository"
+    },
+    {
+      "label": ".RunGitAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L403",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".rungitasync()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_rungitasync"
+    },
+    {
+      "label": ".TryGetGitConfigAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L412",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".trygetgitconfigasync()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_trygetgitconfigasync"
+    },
+    {
+      "label": ".RunProcessCaptureAsync()",
+      "file_type": "code",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L418",
+      "metadata": {
+        "namespace": "Dejan.Skills.Tool",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".runprocesscaptureasync()",
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runprocesscaptureasync"
+    },
+    {
+      "label": "IReadOnlyList",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "ireadonlylist",
+      "id": "src_dejan_skills_tool_toolsengine_cs_ireadonlylist"
+    },
+    {
+      "label": "ExitCode",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "exitcode",
+      "id": "exitcode"
+    },
+    {
+      "label": "Stdout",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "stdout",
+      "id": "stdout"
+    },
+    {
+      "label": "Stderr",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "stderr",
+      "id": "stderr"
+    },
+    {
+      "label": "post-commit",
+      "file_type": "code",
+      "source_file": ".githooks/post-commit",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "githooks_post_commit",
+      "community": 8,
+      "norm_label": "post-commit"
+    },
+    {
+      "label": "post-commit script",
+      "file_type": "code",
+      "source_file": ".githooks/post-commit",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "githooks_post_commit__entry",
+      "community": 8,
+      "norm_label": "post-commit script"
+    },
+    {
+      "label": "GRAPHIFY_CHANGED",
+      "file_type": "code",
+      "source_file": ".githooks/post-commit",
+      "source_location": "L34",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "githooks_post_commit_graphify_changed",
+      "community": 8,
+      "norm_label": "graphify_changed"
+    },
+    {
+      "label": "graphify.js",
+      "file_type": "code",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "opencode_plugins_graphify",
+      "community": 10,
+      "norm_label": "graphify.js"
+    },
+    {
+      "label": "GraphifyPlugin()",
+      "file_type": "code",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "opencode_plugins_graphify_graphifyplugin",
+      "community": 10,
+      "norm_label": "graphifyplugin()"
+    },
+    {
+      "label": "IMPORTANT: keep the reminder string free of backticks and $(...) constructs.",
+      "file_type": "rationale",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "opencode_plugins_graphify_rationale_4",
+      "community": 10,
+      "norm_label": "important: keep the reminder string free of backticks and $(...) constructs."
+    }
+  ],
+  "links": [
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "github_tools_graphify_openwiki_post_commit",
+      "target": "github_tools_graphify_openwiki_post_commit_graphify_changed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "github_tools_graphify_openwiki_post_commit",
+      "target": "github_tools_graphify_openwiki_post_commit_sh__entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/tools/graphify-openwiki/setup.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "github_tools_graphify_openwiki_setup",
+      "target": "github_tools_graphify_openwiki_setup_sh__entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills.sln",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "skills",
+      "target": "src"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills.sln",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "skills",
+      "target": "src_dejan_skills_tool_dejan_skills_tool"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Dejan.Skills.Tool.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_dejan_skills_tool",
+      "target": "framework_net8_0"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Dejan.Skills.Tool.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_dejan_skills_tool",
+      "target": "framework_net9_0"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Dejan.Skills.Tool.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_dejan_skills_tool",
+      "target": "sdk_microsoft_net_sdk"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "csharp_namespace:13444712d5c70201"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L213",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L172",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineexception"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L454",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L180",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L419",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_program"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L279",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_synccommand"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L495",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_synccontent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L491",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncmanifest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L497",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncmanifestjsoncontext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L286",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L493",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncsource"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "csharp_namespace:13444712d5c70201"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine",
+      "target": "csharp_namespace:13444712d5c70201"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_program",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_program_main"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_program_main",
+      "target": "src_dejan_skills_tool_program_cs_task"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_program_main",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L105",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_bootstrapasync",
+      "target": "src_dejan_skills_tool_program_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L98",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_initasync",
+      "target": "src_dejan_skills_tool_program_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync",
+      "target": "src_dejan_skills_tool_program_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync",
+      "target": "src_dejan_skills_tool_program_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L119",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_toolsasync",
+      "target": "src_dejan_skills_tool_program_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L112",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_updateasync",
+      "target": "src_dejan_skills_tool_program_cs_task"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_bootstrapasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_initasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_ishelp"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_printusage"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_toolsasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_updateasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser_parse"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_bootstrapasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_initasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_ishelp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_printusage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_toolsasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_updateasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_parse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ParsedArguments"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getstring"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog_discover"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_downloadasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot_open"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L98",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ParsedArguments"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_initasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_initasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_initasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L105",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ParsedArguments"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_bootstrapasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_bootstrapasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_bootstrapasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L112",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ParsedArguments"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_updateasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_updateasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_updateasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L119",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ParsedArguments"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_toolsasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_toolsasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_executeasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_toolsasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions_fromarguments"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L172",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "Exception"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineexception",
+      "target": "exception"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L223",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "ParsedArguments"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser_parse",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L182",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Dictionary"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments",
+      "target": "dictionary"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L189",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_contains"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getcsv"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L194",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getstring"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L303",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ParsedArguments"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ParsedArguments"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L458",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_parse",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_contains"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L323",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_contains"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_contains"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L305",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getstring"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getstring"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L199",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IReadOnlyList"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getcsv",
+      "target": "src_dejan_skills_tool_program_cs_ireadonlylist"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L324",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getcsv"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getcsv"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L425",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "IReadOnlyList"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget",
+      "target": "src_dejan_skills_tool_program_cs_ireadonlylist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L390",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IReadOnlyList"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_builddefaultinclude",
+      "target": "src_dejan_skills_tool_program_cs_ireadonlylist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L215",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "HashSet"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser",
+      "target": "hashset"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L223",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser_parse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L223",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "IEnumerable"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser_parse",
+      "target": "src_dejan_skills_tool_program_cs_ienumerable"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L390",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SyncCommand"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_builddefaultinclude",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_synccommand"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L303",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SyncCommand"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_synccommand"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L301",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "string"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions",
+      "target": "src_dejan_skills_tool_program_cs_string"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L390",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_builddefaultinclude"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L380",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_tomanifest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L303",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "SyncOptions"
+      },
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L142",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SyncOptions"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SyncOptions"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L353",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SyncOptions"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_create",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L364",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_parse"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L350",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget_parse"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L341",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget_tryparse"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L325",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_builddefaultinclude"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L380",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "SyncManifest"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_tomanifest",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncmanifest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_tomanifest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L390",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SyncManifest"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_builddefaultinclude",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncmanifest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L421",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "PlatformTarget"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L446",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "PlatformTarget"
+      },
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget_parse",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L427",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "PlatformTarget"
+      },
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget_tryparse",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L448",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget_parse",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget_tryparse"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L478",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_tostring"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L483",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_trimgitsuffix"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L456",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "GitHubRepository"
+      },
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_parse",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L200",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "GitHubRepository"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_downloadasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L147",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "GitHubRepository"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L466",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_parse",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_trimgitsuffix"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions_fromarguments",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_parse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L84",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SyncManifest"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_buildstalemanagedfiles",
+      "target": "src_dejan_skills_tool_program_dejan_skills_tool_syncmanifest"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/Program.cs",
+      "source_location": "L497",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "JsonSerializerContext"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_program_dejan_skills_tool_syncmanifestjsoncontext",
+      "target": "jsonserializercontext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L255",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L483",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_copyoperation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L188",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_isourcesnapshot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L331",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L288",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L290",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_buildstalemanagedfiles"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_deleteemptyparents"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_deletemanagedfiles"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync",
+      "target": "src_dejan_skills_tool_syncengine_cs_task"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog_discover"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_buildstalemanagedfiles"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_deletemanagedfiles"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_create"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L200",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_downloadasync",
+      "target": "src_dejan_skills_tool_syncengine_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L147",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync",
+      "target": "src_dejan_skills_tool_syncengine_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L84",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "IReadOnlyList"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_buildstalemanagedfiles",
+      "target": "src_dejan_skills_tool_syncengine_cs_ireadonlylist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L351",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "IReadOnlyList"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan",
+      "target": "src_dejan_skills_tool_syncengine_cs_ireadonlylist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L455",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IReadOnlyList"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_selectitems",
+      "target": "src_dejan_skills_tool_syncengine_cs_ireadonlylist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L292",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IReadOnlyList"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_discover",
+      "target": "src_dejan_skills_tool_syncengine_cs_ireadonlylist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L92",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "IEnumerable"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_deletemanagedfiles",
+      "target": "src_dejan_skills_tool_syncengine_cs_ienumerable"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_deletemanagedfiles",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_deleteemptyparents"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L147",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_downloadasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L147",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "ISourceSnapshot"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_isourcesnapshot"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot_open"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_executeasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L188",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "ISourceSnapshot"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_isourcesnapshot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L200",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "ISourceSnapshot"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_downloadasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_isourcesnapshot"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L158",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "IDisposable"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_isourcesnapshot",
+      "target": "idisposable"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L163",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "ISourceSnapshot"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_isourcesnapshot"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L183",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot_dispose"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L172",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "LocalSourceSnapshot"
+      },
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot_open",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L190",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "string"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot",
+      "target": "src_dejan_skills_tool_syncengine_cs_string"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L246",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_dispose"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L200",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_downloadasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L257",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "ContentCatalog"
+      },
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog_discover",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L353",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ContentCatalog"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_create",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L280",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog_discover",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_discover"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L292",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "ToolBundle"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_discover",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundle"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L310",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ToolBundle"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_installhookasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundle"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L358",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ToolBundle"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_mergegitignoreasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundle"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L118",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ToolBundle"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbundleasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundle"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L292",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_discover"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L324",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_findscript"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L300",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_discover",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_findscript"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_executeasync",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_discover"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L349",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "CopyOperation"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_copyoperation"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L472",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_adddirectoryoperations"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L416",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_copy"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L446",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_getmanagedfiles"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L439",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_isclaudeskilldefinition"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L455",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_selectitems"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L393",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_validateoverwritepolicy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L353",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "SyncPlan"
+      },
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_create",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L379",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_create",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_adddirectoryoperations"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L358",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_create",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_selectitems"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L421",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_copy",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_isclaudeskilldefinition"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L472",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ICollection"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_adddirectoryoperations",
+      "target": "icollection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/SyncEngine.cs",
+      "source_location": "L472",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "CopyOperation"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_adddirectoryoperations",
+      "target": "src_dejan_skills_tool_syncengine_dejan_skills_tool_copyoperation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ToolsOptions"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_executeasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "ToolsOptions"
+      },
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions_fromarguments",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L180",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "string"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_cs_string"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_executeasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L244",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findatwellknowngitlocations"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L276",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findinpath"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L219",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findneargitinstall"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L310",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_installhookasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L397",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_isgitrepository"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L358",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_mergegitignoreasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_resolvebashexecutable"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbashscriptasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbundleasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L403",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_rungitasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L418",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runprocesscaptureasync"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L412",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_trygetgitconfigasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_executeasync",
+      "target": "src_dejan_skills_tool_toolsengine_cs_task"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_executeasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbundleasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L310",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_installhookasync",
+      "target": "src_dejan_skills_tool_toolsengine_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L358",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_mergegitignoreasync",
+      "target": "src_dejan_skills_tool_toolsengine_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L152",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbashscriptasync",
+      "target": "src_dejan_skills_tool_toolsengine_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L118",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbundleasync",
+      "target": "src_dejan_skills_tool_toolsengine_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L403",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_rungitasync",
+      "target": "src_dejan_skills_tool_toolsengine_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L418",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runprocesscaptureasync",
+      "target": "src_dejan_skills_tool_toolsengine_cs_task"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L412",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_trygetgitconfigasync",
+      "target": "src_dejan_skills_tool_toolsengine_cs_task"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbundleasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_installhookasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbundleasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_mergegitignoreasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbundleasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbashscriptasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L156",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbashscriptasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_resolvebashexecutable"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L201",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_resolvebashexecutable",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findatwellknowngitlocations"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_resolvebashexecutable",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findinpath"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L200",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_resolvebashexecutable",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findneargitinstall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L221",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findneargitinstall",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findinpath"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L312",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_installhookasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_isgitrepository"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L351",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_installhookasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_rungitasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L342",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_installhookasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_trygetgitconfigasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L405",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_rungitasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runprocesscaptureasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L414",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_trygetgitconfigasync",
+      "target": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runprocesscaptureasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L418",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "ExitCode"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runprocesscaptureasync",
+      "target": "exitcode"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L418",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "IReadOnlyList"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runprocesscaptureasync",
+      "target": "src_dejan_skills_tool_toolsengine_cs_ireadonlylist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L418",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Stderr"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runprocesscaptureasync",
+      "target": "stderr"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/Dejan.Skills.Tool/ToolsEngine.cs",
+      "source_location": "L418",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Stdout"
+      },
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runprocesscaptureasync",
+      "target": "stdout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".githooks/post-commit",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "githooks_post_commit",
+      "target": "githooks_post_commit__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".githooks/post-commit",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "githooks_post_commit",
+      "target": "githooks_post_commit_graphify_changed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "opencode_plugins_graphify",
+      "target": "opencode_plugins_graphify_graphifyplugin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/plugins/graphify.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "opencode_plugins_graphify_rationale_4",
+      "target": "opencode_plugins_graphify",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "a17f9151b7ca84db855f676ce3b464d78be37cf7"
+}

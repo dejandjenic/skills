@@ -1,0 +1,219 @@
+{
+  "communities": {
+    "0": [
+      "exitcode",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundle",
+      "src_dejan_skills_tool_toolsengine_cs_ireadonlylist",
+      "src_dejan_skills_tool_toolsengine_cs_string",
+      "src_dejan_skills_tool_toolsengine_cs_task",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_executeasync",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findatwellknowngitlocations",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findinpath",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_findneargitinstall",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_installhookasync",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_isgitrepository",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_mergegitignoreasync",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_resolvebashexecutable",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbashscriptasync",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runbundleasync",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_rungitasync",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_runprocesscaptureasync",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine_trygetgitconfigasync",
+      "stderr",
+      "stdout"
+    ],
+    "1": [
+      "dictionary",
+      "src_dejan_skills_tool_program_cs_ienumerable",
+      "src_dejan_skills_tool_program_cs_task",
+      "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser_parse",
+      "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp",
+      "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_bootstrapasync",
+      "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_initasync",
+      "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_ishelp",
+      "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_listasync",
+      "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_printusage",
+      "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_runasync",
+      "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_toolsasync",
+      "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp_updateasync",
+      "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_parse",
+      "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_trimgitsuffix",
+      "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments",
+      "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_contains",
+      "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getstring",
+      "src_dejan_skills_tool_program_dejan_skills_tool_program_main",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions_fromarguments"
+    ],
+    "2": [
+      "icollection",
+      "src_dejan_skills_tool_syncengine",
+      "src_dejan_skills_tool_syncengine_cs_ireadonlylist",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_contentcatalog_discover",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_copyoperation",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_adddirectoryoperations",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_copy",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_create",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_getmanagedfiles",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_isclaudeskilldefinition",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_selectitems",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan_validateoverwritepolicy",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_discover",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_toolbundlecatalog_findscript"
+    ],
+    "3": [
+      "idisposable",
+      "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository",
+      "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository_tostring",
+      "src_dejan_skills_tool_syncengine_cs_string",
+      "src_dejan_skills_tool_syncengine_cs_task",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_dispose",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot_downloadasync",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_isourcesnapshot",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot_dispose",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_localsourcesnapshot_open",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_sourcesnapshot_openasync"
+    ],
+    "4": [
+      "csharp_namespace:13444712d5c70201",
+      "exception",
+      "hashset",
+      "jsonserializercontext",
+      "src_dejan_skills_tool_program",
+      "src_dejan_skills_tool_program_dejan_skills_tool_argumentparser",
+      "src_dejan_skills_tool_program_dejan_skills_tool_commandlineexception",
+      "src_dejan_skills_tool_program_dejan_skills_tool_program",
+      "src_dejan_skills_tool_program_dejan_skills_tool_synccontent",
+      "src_dejan_skills_tool_program_dejan_skills_tool_syncmanifestjsoncontext",
+      "src_dejan_skills_tool_program_dejan_skills_tool_syncsource",
+      "src_dejan_skills_tool_toolsengine",
+      "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsoptions"
+    ],
+    "5": [
+      "src_dejan_skills_tool_program_cs_ireadonlylist",
+      "src_dejan_skills_tool_program_cs_string",
+      "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments_getcsv",
+      "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget",
+      "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget_parse",
+      "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget_tryparse",
+      "src_dejan_skills_tool_program_dejan_skills_tool_synccommand",
+      "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions",
+      "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_builddefaultinclude",
+      "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_fromarguments"
+    ],
+    "6": [
+      "src_dejan_skills_tool_program_dejan_skills_tool_syncmanifest",
+      "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions_tomanifest",
+      "src_dejan_skills_tool_syncengine_cs_ienumerable",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_buildstalemanagedfiles",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_deleteemptyparents",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_deletemanagedfiles",
+      "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine_executeasync"
+    ],
+    "7": [
+      "framework_net8_0",
+      "framework_net9_0",
+      "sdk_microsoft_net_sdk",
+      "skills",
+      "src",
+      "src_dejan_skills_tool_dejan_skills_tool"
+    ],
+    "8": [
+      "githooks_post_commit",
+      "githooks_post_commit__entry",
+      "githooks_post_commit_graphify_changed"
+    ],
+    "9": [
+      "github_tools_graphify_openwiki_post_commit",
+      "github_tools_graphify_openwiki_post_commit_graphify_changed",
+      "github_tools_graphify_openwiki_post_commit_sh__entry"
+    ],
+    "10": [
+      "opencode_plugins_graphify",
+      "opencode_plugins_graphify_graphifyplugin",
+      "opencode_plugins_graphify_rationale_4"
+    ],
+    "11": [
+      "github_tools_graphify_openwiki_setup",
+      "github_tools_graphify_openwiki_setup_sh__entry"
+    ]
+  },
+  "cohesion": {
+    "0": 0.20476190476190476,
+    "1": 0.22631578947368422,
+    "2": 0.19117647058823528,
+    "3": 0.1978021978021978,
+    "4": 0.15384615384615385,
+    "5": 0.35555555555555557,
+    "6": 0.39285714285714285,
+    "7": 0.3333333333333333,
+    "8": 0.6666666666666666,
+    "9": 0.6666666666666666,
+    "10": 0.6666666666666666,
+    "11": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_dejan_skills_tool_toolsengine_dejan_skills_tool_toolsengine",
+      "label": "ToolsEngine",
+      "degree": 15
+    },
+    {
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_parsedarguments",
+      "label": "ParsedArguments",
+      "degree": 13
+    },
+    {
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncplan",
+      "label": "SyncPlan",
+      "degree": 10
+    },
+    {
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_commandlineapp",
+      "label": "CommandLineApp",
+      "degree": 9
+    },
+    {
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_syncoptions",
+      "label": "SyncOptions",
+      "degree": 8
+    },
+    {
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_platformtarget",
+      "label": "PlatformTarget",
+      "degree": 6
+    },
+    {
+      "id": "src_dejan_skills_tool_program_dejan_skills_tool_githubrepository",
+      "label": "GitHubRepository",
+      "degree": 6
+    },
+    {
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_isourcesnapshot",
+      "label": "ISourceSnapshot",
+      "degree": 6
+    },
+    {
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_syncengine",
+      "label": "SyncEngine",
+      "degree": 5
+    },
+    {
+      "id": "src_dejan_skills_tool_syncengine_dejan_skills_tool_githubarchivesnapshot",
+      "label": "GitHubArchiveSnapshot",
+      "degree": 5
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

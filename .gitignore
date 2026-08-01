@@ -52,3 +52,8 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# graphify-openwiki
+graphify-out/cost.json
+graphify-out/cache/
+.github/workflows/openwiki-update.yml
