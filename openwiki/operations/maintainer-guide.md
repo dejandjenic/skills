@@ -29,6 +29,6 @@ To publish a new version of `dejan-skills`:
 
 ## Repository Hooks & Setup Tools
 
-The repository includes `.githooks/` and tooling setup managed via `dejan-skills tools`. Notably, the post-commit hook under `.github/tools/graphify-openwiki/post-commit.sh` automatically updates OpenWiki documentation and rebuilds Graphify knowledge graphs, including safeguards against duplicate `<!-- OPENWIKI:START/END -->` blocks.
+The repository includes `.githooks/` and tooling setup managed via `dejan-skills tools`. Notably, the post-commit hook under `.githooks/post-commit` automatically updates OpenWiki documentation and rebuilds Graphify knowledge graphs, including safeguards against duplicate `<!-- OPENWIKI:START/END -->` blocks.
 
 Related concepts: see [/openwiki/architecture/sync-tool.md](/openwiki/architecture/sync-tool.md) for sync tool architecture.
