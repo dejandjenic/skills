@@ -4,48 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "label": "post-commit.sh",
-      "file_type": "code",
-      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "file"
-      },
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "post-commit.sh",
-      "id": "github_tools_graphify_openwiki_post_commit"
-    },
-    {
-      "label": "post-commit.sh script",
-      "file_type": "code",
-      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_entrypoint"
-      },
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "post-commit.sh script",
-      "id": "github_tools_graphify_openwiki_post_commit_sh__entry"
-    },
-    {
-      "label": "GRAPHIFY_CHANGED",
-      "file_type": "code",
-      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
-      "source_location": "L34",
-      "metadata": {
-        "language": "bash",
-        "kind": "code"
-      },
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "graphify_changed",
-      "id": "github_tools_graphify_openwiki_post_commit_graphify_changed"
-    },
-    {
       "label": "setup.sh",
       "file_type": "code",
       "source_file": ".github/tools/graphify-openwiki/setup.sh",
@@ -1652,9 +1610,9 @@
         "kind": "file"
       },
       "_origin": "ast",
-      "id": "githooks_post_commit",
       "community": 8,
-      "norm_label": "post-commit"
+      "norm_label": "post-commit",
+      "id": "githooks_post_commit"
     },
     {
       "label": "post-commit script",
@@ -1666,9 +1624,9 @@
         "kind": "bash_entrypoint"
       },
       "_origin": "ast",
-      "id": "githooks_post_commit__entry",
       "community": 8,
-      "norm_label": "post-commit script"
+      "norm_label": "post-commit script",
+      "id": "githooks_post_commit__entry"
     },
     {
       "label": "GRAPHIFY_CHANGED",
@@ -1680,9 +1638,9 @@
         "kind": "code"
       },
       "_origin": "ast",
-      "id": "githooks_post_commit_graphify_changed",
       "community": 8,
-      "norm_label": "graphify_changed"
+      "norm_label": "graphify_changed",
+      "id": "githooks_post_commit_graphify_changed"
     },
     {
       "label": "graphify.js",
@@ -1690,9 +1648,9 @@
       "source_file": ".opencode/plugins/graphify.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "opencode_plugins_graphify",
       "community": 10,
-      "norm_label": "graphify.js"
+      "norm_label": "graphify.js",
+      "id": "opencode_plugins_graphify"
     },
     {
       "label": "GraphifyPlugin()",
@@ -1700,9 +1658,9 @@
       "source_file": ".opencode/plugins/graphify.js",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "opencode_plugins_graphify_graphifyplugin",
       "community": 10,
-      "norm_label": "graphifyplugin()"
+      "norm_label": "graphifyplugin()",
+      "id": "opencode_plugins_graphify_graphifyplugin"
     },
     {
       "label": "IMPORTANT: keep the reminder string free of backticks and $(...) constructs.",
@@ -1710,34 +1668,54 @@
       "source_file": ".opencode/plugins/graphify.js",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "opencode_plugins_graphify_rationale_4",
       "community": 10,
-      "norm_label": "important: keep the reminder string free of backticks and $(...) constructs."
+      "norm_label": "important: keep the reminder string free of backticks and $(...) constructs.",
+      "id": "opencode_plugins_graphify_rationale_4"
+    },
+    {
+      "label": "post-commit.sh",
+      "file_type": "code",
+      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "github_tools_graphify_openwiki_post_commit",
+      "community": 9,
+      "norm_label": "post-commit.sh"
+    },
+    {
+      "label": "post-commit.sh script",
+      "file_type": "code",
+      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "github_tools_graphify_openwiki_post_commit_sh__entry",
+      "community": 9,
+      "norm_label": "post-commit.sh script"
+    },
+    {
+      "label": "GRAPHIFY_CHANGED",
+      "file_type": "code",
+      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
+      "source_location": "L63",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "github_tools_graphify_openwiki_post_commit_graphify_changed",
+      "community": 9,
+      "norm_label": "graphify_changed"
     }
   ],
   "links": [
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
-      "source_location": "L34",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "github_tools_graphify_openwiki_post_commit",
-      "target": "github_tools_graphify_openwiki_post_commit_graphify_changed"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "github_tools_graphify_openwiki_post_commit",
-      "target": "github_tools_graphify_openwiki_post_commit_sh__entry"
-    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -4592,9 +4570,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "githooks_post_commit",
-      "target": "githooks_post_commit__entry",
-      "confidence_score": 1.0
+      "target": "githooks_post_commit__entry"
     },
     {
       "relation": "defines",
@@ -4603,9 +4581,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "githooks_post_commit",
-      "target": "githooks_post_commit_graphify_changed",
-      "confidence_score": 1.0
+      "target": "githooks_post_commit_graphify_changed"
     },
     {
       "relation": "contains",
@@ -4614,9 +4592,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "opencode_plugins_graphify",
-      "target": "opencode_plugins_graphify_graphifyplugin",
-      "confidence_score": 1.0
+      "target": "opencode_plugins_graphify_graphifyplugin"
     },
     {
       "relation": "rationale_for",
@@ -4625,11 +4603,33 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "opencode_plugins_graphify_rationale_4",
-      "target": "opencode_plugins_graphify",
+      "target": "opencode_plugins_graphify"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_tools_graphify_openwiki_post_commit",
+      "target": "github_tools_graphify_openwiki_post_commit_graphify_changed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/tools/graphify-openwiki/post-commit.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_tools_graphify_openwiki_post_commit",
+      "target": "github_tools_graphify_openwiki_post_commit_sh__entry",
       "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a17f9151b7ca84db855f676ce3b464d78be37cf7"
+  "built_at_commit": "946593551dcb239c4581a03c706eef0279e1e4f3"
 }

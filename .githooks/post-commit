@@ -22,6 +22,35 @@ else
 fi
 
 # ==================================================
+# Step 1b: Collapse duplicate OpenWiki blocks
+# ==================================================
+# `openwiki code --update` appends a fresh <!-- OPENWIKI:START/END --> block
+# instead of replacing the existing one, so repeated commits accumulate
+# duplicate copies in these files. Collapse down to the last (newest) block.
+python -c "
+import re
+from pathlib import Path
+
+PATTERN = re.compile(r'<!-- OPENWIKI:START -->.*?<!-- OPENWIKI:END -->', re.DOTALL)
+
+for name in ('AGENTS.md', 'CLAUDE.md'):
+    path = Path(name)
+    if not path.exists():
+        continue
+
+    text = path.read_text(encoding='utf-8')
+    blocks = PATTERN.findall(text)
+    if len(blocks) <= 1:
+        continue
+
+    before = text[: text.index(blocks[0])].rstrip('\n')
+    deduped = before + '\n\n' + blocks[-1].strip() + '\n'
+    if deduped != text:
+        path.write_text(deduped, encoding='utf-8')
+        print(f'[openwiki hook] collapsed {len(blocks)} OpenWiki blocks in {name} down to 1')
+"
+
+# ==================================================
 # Step 2: Run Graphify Knowledge Graph Rebuild
 # ==================================================
 echo "🕸️ Step 2: Rebuilding Graphify knowledge graph..."

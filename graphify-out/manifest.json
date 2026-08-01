@@ -5,9 +5,9 @@
     "semantic_hash": "d392fb4ceb5f650b52286c055c47fef3"
   },
   ".github/tools/graphify-openwiki/post-commit.sh": {
-    "mtime": 1785570321.061938,
-    "ast_hash": "44dfc0dda30da6f964e09b581349c3a1",
-    "semantic_hash": "44dfc0dda30da6f964e09b581349c3a1"
+    "mtime": 1785574555.323104,
+    "ast_hash": "6662d927b702991119acc9fbc52aaaa3",
+    "semantic_hash": "6662d927b702991119acc9fbc52aaaa3"
   },
   ".github/tools/graphify-openwiki/setup.sh": {
     "mtime": 1785570309.4691541,
@@ -45,7 +45,7 @@
     "semantic_hash": "6021e1782a08cd40c738f5c834f12925"
   },
   ".githooks/post-commit": {
-    "mtime": 1785573865.82604,
+    "mtime": 1785574052.4623592,
     "ast_hash": "44dfc0dda30da6f964e09b581349c3a1",
     "semantic_hash": "44dfc0dda30da6f964e09b581349c3a1"
   },
@@ -55,13 +55,13 @@
     "semantic_hash": "f2ae21510d07365eb2bce8159272c7a0"
   },
   ".opencode/plugins/graphify.js": {
-    "mtime": 1785573838.7706575,
+    "mtime": 1785574029.3259592,
     "ast_hash": "b33d000860642c6f4907a877e0387a21",
     "semantic_hash": "b33d000860642c6f4907a877e0387a21"
   },
   "openwiki/.last-update.json": {
-    "mtime": 1785573865.3179512,
-    "ast_hash": "bc2d154f210797ff39758dc77ff1be85",
-    "semantic_hash": "bc2d154f210797ff39758dc77ff1be85"
+    "mtime": 1785574670.8986042,
+    "ast_hash": "b8bff4e9afd160553ff3625761946800",
+    "semantic_hash": "b8bff4e9afd160553ff3625761946800"
   }
 }
