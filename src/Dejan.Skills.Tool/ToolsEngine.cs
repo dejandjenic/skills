@@ -196,20 +196,101 @@ internal static class ToolsEngine
         // System32 before PATH-listed directories. The WSL stub cannot open Windows
         // drive paths (it needs /mnt/d/... instead of D:/...), so it must be skipped
         // explicitly in favor of a real POSIX bash (Git Bash, Cygwin, etc).
-        var systemRoot = Environment.GetEnvironmentVariable("SystemRoot") ?? @"C:\Windows";
-        var excludedPrefixes = new[]
+        var found = FindInPath("bash.exe", excludeWslStubs: true)
+            ?? FindNearGitInstall()
+            ?? FindAtWellKnownGitLocations();
+
+        if (found is null)
         {
-            Path.Combine(systemRoot, "System32"),
-            Path.Combine(systemRoot, "SysWOW64"),
-            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Microsoft", "WindowsApps"),
+            throw new CommandLineException(
+                "Unable to locate a usable 'bash' (Git Bash) — only a WSL launcher stub was found on PATH, and no Git for Windows "
+                + "install could be located either. Install Git for Windows, or add its 'bin' directory to PATH, and try again.");
+        }
+
+        _resolvedBashPath = found;
+        return found;
+    }
+
+    // Git for Windows' installer typically adds only "Git\cmd" (git.exe) to the
+    // system/user PATH — the "Git\bin"/"Git\usr\bin" folders that hold bash.exe are
+    // usually only present in PATH inside an interactive Git Bash session. So a
+    // plain PATH scan for bash.exe often comes up empty even when Git Bash is
+    // installed; derive its location from where git.exe itself lives instead.
+    private static string? FindNearGitInstall()
+    {
+        var gitExe = FindInPath("git.exe", excludeWslStubs: false);
+        if (gitExe is null)
+        {
+            return null;
+        }
+
+        var gitCmdDir = Path.GetDirectoryName(gitExe);
+        var gitRoot = gitCmdDir is null ? null : Path.GetDirectoryName(gitCmdDir);
+        if (gitRoot is null)
+        {
+            return null;
+        }
+
+        var binBash = Path.Combine(gitRoot, "bin", "bash.exe");
+        if (File.Exists(binBash))
+        {
+            return binBash;
+        }
+
+        var usrBinBash = Path.Combine(gitRoot, "usr", "bin", "bash.exe");
+        return File.Exists(usrBinBash) ? usrBinBash : null;
+    }
+
+    private static string? FindAtWellKnownGitLocations()
+    {
+        var roots = new[]
+        {
+            Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+            Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86),
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Programs"),
         };
+
+        foreach (var root in roots)
+        {
+            if (string.IsNullOrEmpty(root))
+            {
+                continue;
+            }
+
+            var binBash = Path.Combine(root, "Git", "bin", "bash.exe");
+            if (File.Exists(binBash))
+            {
+                return binBash;
+            }
+
+            var usrBinBash = Path.Combine(root, "Git", "usr", "bin", "bash.exe");
+            if (File.Exists(usrBinBash))
+            {
+                return usrBinBash;
+            }
+        }
+
+        return null;
+    }
+
+    private static string? FindInPath(string fileName, bool excludeWslStubs)
+    {
+        var systemRoot = Environment.GetEnvironmentVariable("SystemRoot") ?? @"C:\Windows";
+        var excludedPrefixes = excludeWslStubs
+            ? new[]
+            {
+                Path.Combine(systemRoot, "System32"),
+                Path.Combine(systemRoot, "SysWOW64"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Microsoft", "WindowsApps"),
+            }
+            : Array.Empty<string>();
 
         var pathEntries = (Environment.GetEnvironmentVariable("PATH") ?? string.Empty)
             .Split(Path.PathSeparator, StringSplitOptions.RemoveEmptyEntries);
 
         foreach (var directory in pathEntries)
         {
-            var candidate = Path.Combine(directory.Trim(), "bash.exe");
+            var candidate = Path.Combine(directory.Trim(), fileName);
             if (!File.Exists(candidate))
             {
                 continue;
@@ -220,12 +301,10 @@ internal static class ToolsEngine
                 continue;
             }
 
-            _resolvedBashPath = candidate;
             return candidate;
         }
 
-        throw new CommandLineException(
-            "Unable to locate a usable 'bash' on PATH (only a WSL launcher stub was found, which cannot resolve Windows paths). Install Git for Windows and ensure its bin directory is on PATH.");
+        return null;
     }
 
     private static async Task InstallHookAsync(ToolBundle bundle, string target, bool force)
