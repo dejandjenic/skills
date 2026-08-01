@@ -48,6 +48,7 @@ internal static class CommandLineApp
             "init" => await InitAsync(parser),
             "bootstrap" => await BootstrapAsync(parser),
             "update" => await UpdateAsync(parser),
+            "tools" => await ToolsAsync(parser),
             _ => throw new CommandLineException($"Unknown command '{args[0]}'.")
         };
     }
@@ -84,6 +85,13 @@ internal static class CommandLineApp
             Console.WriteLine($"- {prompt}");
         }
 
+        Console.WriteLine();
+        Console.WriteLine("Tools:");
+        foreach (var tool in catalog.Tools.OrderBy(static item => item, StringComparer.OrdinalIgnoreCase))
+        {
+            Console.WriteLine($"- {tool}");
+        }
+
         return 0;
     }
 
@@ -108,6 +116,12 @@ internal static class CommandLineApp
         return 0;
     }
 
+    private static async Task<int> ToolsAsync(ParsedArguments parser)
+    {
+        var options = ToolsOptions.FromArguments(parser);
+        return await ToolsEngine.ExecuteAsync(options);
+    }
+
     private static bool IsHelp(string arg)
     {
         return arg is "-h" or "--help" or "help";
@@ -122,9 +136,11 @@ internal static class CommandLineApp
         Console.WriteLine("  dejan-skills init [options]");
         Console.WriteLine("  dejan-skills bootstrap [options]");
         Console.WriteLine("  dejan-skills update [options]");
+        Console.WriteLine("  dejan-skills tools [options]");
         Console.WriteLine();
         Console.WriteLine("Options:");
         Console.WriteLine("  --target <path>         Target repository path. Default: current directory.");
+        Console.WriteLine("                          For 'tools', comma-separated to target multiple repos.");
         Console.WriteLine("  --source-path <path>    Read content from a local repo checkout instead of GitHub.");
         Console.WriteLine("  --repo <owner/repo>     Source GitHub repo. Default: dejandjenic/skills.");
         Console.WriteLine("  --ref <name>            Source git ref. Default: main.");
@@ -132,10 +148,11 @@ internal static class CommandLineApp
         Console.WriteLine("  --include <items>       Comma-separated: skills,prompts. Default: skills,prompts.");
         Console.WriteLine("  --skills <list>         Comma-separated skill folder names.");
         Console.WriteLine("  --prompts <list>        Comma-separated prompt names without .prompt.md.");
+        Console.WriteLine("  --tools <list>          'tools' only: comma-separated tool bundle names. Default: all.");
         Console.WriteLine("  --with-skills           Bootstrap preset: include skills in addition to prompts.");
         Console.WriteLine("  --no-prune              Update preset: do not remove stale previously managed files.");
-        Console.WriteLine("  --force                 Overwrite existing files.");
-        Console.WriteLine("  --dry-run               Show what would be copied without writing files.");
+        Console.WriteLine("  --force                 Overwrite existing files/hooks.");
+        Console.WriteLine("  --dry-run               Show what would be copied/run without making changes.");
         Console.WriteLine();
         Console.WriteLine("Examples:");
         Console.WriteLine("  dejan-skills list");
@@ -147,6 +164,8 @@ internal static class CommandLineApp
         Console.WriteLine("  dejan-skills init --target ../my-repo --source-path ../skills-clone --repo https://github.com/dejandjenic/skills");
         Console.WriteLine("  dejan-skills init --skills dejan-workflow-coding-assistant --prompts dejan.workflow-coding-assistant");
         Console.WriteLine("  dejan-skills update --target ../my-repo --force");
+        Console.WriteLine("  dejan-skills tools --target ../repoA,../repoB");
+        Console.WriteLine("  dejan-skills tools --target ../my-repo --tools graphify-openwiki --dry-run");
     }
 }
 

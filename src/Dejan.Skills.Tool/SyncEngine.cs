@@ -141,12 +141,17 @@ internal static class SourceSnapshot
 {
     public static Task<ISourceSnapshot> OpenAsync(SyncOptions options)
     {
-        if (!string.IsNullOrWhiteSpace(options.SourcePath))
+        return OpenAsync(options.SourcePath, options.Repository, options.RefName);
+    }
+
+    public static Task<ISourceSnapshot> OpenAsync(string? sourcePath, GitHubRepository repository, string refName)
+    {
+        if (!string.IsNullOrWhiteSpace(sourcePath))
         {
-            return Task.FromResult<ISourceSnapshot>(LocalSourceSnapshot.Open(options.SourcePath));
+            return Task.FromResult<ISourceSnapshot>(LocalSourceSnapshot.Open(sourcePath));
         }
 
-        return GitHubArchiveSnapshot.DownloadAsync(options.Repository, options.RefName);
+        return GitHubArchiveSnapshot.DownloadAsync(repository, refName);
     }
 }
 
@@ -247,7 +252,7 @@ internal sealed class GitHubArchiveSnapshot : ISourceSnapshot
     }
 }
 
-internal sealed record ContentCatalog(IReadOnlyList<string> Skills, IReadOnlyList<string> Prompts)
+internal sealed record ContentCatalog(IReadOnlyList<string> Skills, IReadOnlyList<string> Prompts, IReadOnlyList<string> Tools)
 {
     public static ContentCatalog Discover(string repoRoot)
     {
@@ -272,7 +277,51 @@ internal sealed record ContentCatalog(IReadOnlyList<string> Skills, IReadOnlyLis
                 .ToArray()
             : Array.Empty<string>();
 
-        return new ContentCatalog(skills, prompts);
+        var tools = ToolBundleCatalog.Discover(repoRoot, Array.Empty<string>())
+            .Select(static bundle => bundle.Name)
+            .ToArray();
+
+        return new ContentCatalog(skills, prompts, tools);
+    }
+}
+
+internal sealed record ToolBundle(string Name, string? SetupScriptPath, string? PostCommitScriptPath);
+
+internal static class ToolBundleCatalog
+{
+    public static IReadOnlyList<ToolBundle> Discover(string repoRoot, IReadOnlyList<string> requestedNames)
+    {
+        var toolsRoot = Path.Combine(repoRoot, ".github", "tools");
+
+        var available = Directory.Exists(toolsRoot)
+            ? Directory.GetDirectories(toolsRoot)
+                .Select(static dir => new ToolBundle(
+                    Path.GetFileName(dir)!,
+                    FindScript(dir, "setup.sh"),
+                    FindScript(dir, "post-commit.sh")))
+                .Where(static bundle => bundle.SetupScriptPath is not null || bundle.PostCommitScriptPath is not null)
+                .ToArray()
+            : Array.Empty<ToolBundle>();
+
+        if (requestedNames.Count == 0)
+        {
+            return available;
+        }
+
+        var byName = available.ToDictionary(static bundle => bundle.Name, StringComparer.OrdinalIgnoreCase);
+        var missing = requestedNames.Where(name => !byName.ContainsKey(name)).ToArray();
+        if (missing.Length > 0)
+        {
+            throw new CommandLineException($"Unknown tool selection(s): {string.Join(", ", missing)}.");
+        }
+
+        return requestedNames.Select(name => byName[name]).ToArray();
+    }
+
+    private static string? FindScript(string dir, string fileName)
+    {
+        var path = Path.Combine(dir, fileName);
+        return File.Exists(path) ? path : null;
     }
 }
 
